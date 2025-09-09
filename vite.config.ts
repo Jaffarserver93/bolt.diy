@@ -20,7 +20,7 @@ export default defineConfig((config) => {
       target: 'esnext',
     },
     server: {
-      allowedHosts: ['bolt.jxfrcloud.xyz'],
+      allowedHosts: ['bt.jxfrcloud.xyz'],
     },
     plugins: [
       nodePolyfills({
