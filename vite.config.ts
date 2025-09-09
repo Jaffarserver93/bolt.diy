@@ -19,6 +19,9 @@ export default defineConfig((config) => {
     build: {
       target: 'esnext',
     },
+    server: {
+      allowedHosts: ['bolt.jxfrcloud.xyz'],
+    },
     plugins: [
       nodePolyfills({
         include: ['buffer', 'process', 'util', 'stream'],
@@ -60,7 +63,6 @@ export default defineConfig((config) => {
     envPrefix: [
       'VITE_',
       'OPENAI_LIKE_API_BASE_URL',
-      'OPENAI_LIKE_API_MODELS',
       'OLLAMA_API_BASE_URL',
       'LMSTUDIO_API_BASE_URL',
       'TOGETHER_API_BASE_URL',
